@@ -1,0 +1,30 @@
+video {
+    width:720px; height:480;
+}
+h1 {
+    font-family:monospace;font:monospace;
+}
+h2 {
+    font-family:monospace;font:monospace;
+}
+p {
+    font-family:monospace;font:monospace;
+}
+#home:hover {
+    color:white;background:red;
+}
+#social:hover {
+    background:orange;color:white;
+}
+#tutorial:hover {
+    background:yellow;color:white;
+}
+#weeklymeme:hover {
+    background:steelblue;color:white;
+}
+#weeklymeme {
+    color:steelblue;
+}
+#contact:hover {
+    background:#6dd18b;color:white;
+}
