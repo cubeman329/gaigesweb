@@ -26,7 +26,7 @@ const mm = new Audio();
 mm.src = './MUSIC MAN.mp3';
 
 const bonk = new Audio();
-bonk.src = './mm.mp3';
+bonk.src = './bonk.mp3';
 
 const fart3 = new Audio();
 fart3.src = './fart3.mp3';
