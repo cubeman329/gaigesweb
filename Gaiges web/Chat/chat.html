@@ -1,130 +1,167 @@
 <html>
-    <head>
-        <style>
-            body {
-  background: #f0f1f5;
-  padding-top: 50px;
-  background-image:linear-gradient(pink,black);
-}
 
-#chatroom {
-  padding: 30px;
-  border: 1px solid lightgrey;
-  background: white;
-}
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-.date {
-  color: #b3b3b3;
-}
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+      background: #f0f1f5;
+      padding-top: 50px;
+      background-image: linear-gradient(pink, black);
+    }
 
-#messages {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid lightgrey;
-}
-#backbutton:hover {
-    background;red
-    color="white"
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
 
+    #chatroom {
+      padding: 30px;
+      border: 1px solid lightgrey;
+      background: white;
+    }
 
-        </style>
-    </head>
-     <body>
-         <h1>Chats are deleted after a while</h1>
+    .date {
+      color: #b3b3b3;
+    }
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <div id="chatroom" class="rounded">
-            <h1>CHAT-ROOM</h1>
+    #messages {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid lightgrey;
+      overflow-y: scroll;
+    }
 
-            <form action="#" id="comment-form">
+    #backButton {
+      border-radius: 5px;
+      border: 1px solid dimgrey;
+      background: linear-gradient(white 50%, lightgrey 50%, white);
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+      transition: 0.2s;
+      font-family: "Ubuntu", sans-serif;
+    }
 
-              <div class="form-group">
-                <label for="your-message">Your comment</label>
-                <textarea type="text" name="content" id="your-message" class="form-control" placeholder="Here is my message.."></textarea>
-              </div>
+    #backButton:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
-              <div class="form-group">
-                <label for="your-name">From</label>
-                <input type="text" name="content" id="your-name" class="form-control" placeholder="Bob">
-              </div>
-              <input type="submit" value="Send" class="btn btn-primary" id="submit">
-            </form>
+    }
 
-            <div id="messages">
-              <ul class="list-unstyled" id="list">
-              </ul>
+    .rounded {
+      height: 500;
+      width: 400;
+      border-radius: 10px;
+      border: 1px solid dimgrey;
+      background: #eee;
+    }
+    #author {
+      color:blue;
+    }
+  </style>
+</head>
 
-              <button class="btn btn-danger" id="refresh">Refresh Chat</button>
+<body>
+  <h1>Chats are deleted after a while</h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div id="chatroom" class="rounded">
+          <h1>CHAT-ROOM</h1>
+
+          <form action="#" id="comment-form">
+
+            <div class="form-group">
+              <label for="your-message">Your comment</label><br>
+              <textarea type="text" name="content" id="your-message" class="form-control"
+                placeholder="Here is my message.."></textarea>
             </div>
 
+            <div class="form-group">
+              <label for="your-name">From</label><br>
+              <input type="text" name="content" id="your-name" class="form-control" placeholder="Bob">
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary" id="submit">
+          </form>
+
+          <button class="btn btn-danger" id="refresh">Refresh Chat</button>
+
+          <div id="messages">
+            <ul class="list-unstyled" id="list">
+            </ul>
+
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="main.js"></script>
-    <script>
-        const batch = 533;
-// using endpoint ':channel/messages'
-const baseUrl = `https://wagon-chat.herokuapp.com/${batch}/messages`;
+  <script src="main.js"></script>
+  <script>
+    const batch = "gwc";
+    // using endpoint ':channel/messages'
+    const baseUrl = `https://wagon-chat.herokuapp.com/${batch}/messages`;
 
-// selecting the elements
-const refreshBtn = document.getElementById("refresh");
-const listOfMessages = document.getElementById("list");
-const comment = document.getElementById("your-message");
-const sender = document.getElementById("your-name");
-const submitBtn = document.getElementById("submit");
+    // selecting the elements
+    const refreshBtn = document.getElementById("refresh");
+    const listOfMessages = document.getElementById("list");
+    const comment = document.getElementById("your-message");
+    const sender = document.getElementById("your-name");
+    const submitBtn = document.getElementById("submit");
 
-// http GET request to refresh the list of comments
-const refreshChat = () => {
-  fetch(baseUrl)
-    .then(response => response.json())
-    .then((data) => {
-      // to clean the list and avoid repetition
-      listOfMessages.innerHTML = "";
-      // digging into the json
-      const messages = data.messages;
-      messages.forEach((message) => {
-        const content = message.content;
-        const author = message.author;
-        const minutesAgo = Math.round((new Date() - new Date(message.created_at)) / 60000);
-        const fullMessage = `<li>${message.content} (posted <span class="date">${minutesAgo} minutes ago</span>) by ${author}</li>`;
-        listOfMessages.insertAdjacentHTML("afterbegin", fullMessage);
-      });
+    // http GET request to refresh the list of comments
+    const refreshChat = () => {
+      fetch(baseUrl)
+        .then(response => response.json())
+        .then((data) => {
+          // to clean the list and avoid repetition
+          listOfMessages.innerHTML = "";
+          // digging into the json
+          const messages = data.messages;
+          messages.forEach((message) => {
+            const content = message.content;
+            const author = message.author;
+            const minutesAgo = Math.round((new Date() - new Date(message.created_at)) / 60000);
+            const fullMessage = `<li><span id="author"><b><i>${author}</i><b></span> said ${message.content}, <span class='date'>${minutesAgo} minutes ago</li>`;
+            listOfMessages.insertAdjacentHTML("afterbegin", fullMessage);
+          });
+        });
+    };
+
+    refreshBtn.addEventListener("click", refreshChat);
+
+    // http POST request to write messages, send them to the API and display them in the chat
+    const postMessage = () => {
+      const myMessage = { author: sender.value, content: comment.value };
+      console.log(myMessage);
+      fetch(baseUrl, {
+        method: "POST",
+        body: JSON.stringify(myMessage)
+      })
+        // parse response as a json
+        .then(response => response.json())
+        .then((data) => {
+          refreshChat();
+        });
+    };
+
+    submitBtn.addEventListener("click", (event) => {
+      // avoid the default behavior of page loading
+      event.preventDefault();
+      postMessage();
     });
-};
 
-refreshBtn.addEventListener("click", refreshChat);
+    // refresh the app automatically
+    document.addEventListener("DOMContentLoaded", refreshChat);
+  </script>
+  <a href="../Home/home.html">
+    <button id="backButton">Back</button>
+  </a>
+</body>
 
-// http POST request to write messages, send them to the API and display them in the chat
-const postMessage = () => {
-  const myMessage = { author: sender.value, content: comment.value };
-  console.log(myMessage);
-  fetch(baseUrl, {
-    method: "POST",
-    body: JSON.stringify(myMessage)
-  })
-    // parse response as a json
-    .then(response => response.json())
-    .then((data) => {
-      refreshChat();
-    });
-};
-
-submitBtn.addEventListener("click", (event) => {
-  // avoid the default behavior of page loading
-  event.preventDefault();
-  postMessage();
-});
-
-// refresh the app automatically
-document.addEventListener("DOMContentLoaded", refreshChat);
-    </script>
-    <a href="../Home/home.html">
-        <button id="backButton">Back</button>
-    </a>
-  </body>
 </html>
