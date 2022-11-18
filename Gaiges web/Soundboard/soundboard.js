@@ -14,7 +14,7 @@ const bababooey = new Audio();
 bababooey.src = "bababooey.mp3";
 
 const notif = new Audio();
-notif.mp3 = "./notif";
+notif.src = "./notif.mp3";
 
 const bruh = new Audio();
 bruh.src = "./bruh.mp3";
