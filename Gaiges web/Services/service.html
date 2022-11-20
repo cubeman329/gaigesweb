@@ -37,8 +37,12 @@
             margin-right: 15px;
             background: linear-gradient(#6e5dc3, black);
             color: white;
+            transition: 0.2s;
         }
-
+        .service:hover {
+            transform: scale(1.02) translate(0px, -5px);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+        }
         #b {
             top: 0%;
             left: 0%;
@@ -46,7 +50,14 @@
             position: fixed;
 
         }
+        a {
+            font-style: oblique;
+            color:white;
 
+        }
+        a:visited {
+            color: #6e5dc345;
+        }
         #bb {
             border: 1px solid dimgrey;
             border-radius: 5px;
@@ -63,23 +74,23 @@
         @keyframes rotate {
             0% {
 
-                transform: rotate(3deg) scale(1.03, 1.03);
+                transform: rotate(1deg);
             }
 
             33.33% {
 
-                transform: rotate(-3deg) scale(1.03, 1.03);
+                transform: rotate(-1deg);
             }
 
             66.66% {
 
-                transform: rotate(3deg);
+                transform: rotate(1deg);
 
             }
 
             100% {
 
-                transform: rotate(-3deg);
+                transform: rotate(-1deg);
 
             }
         }
