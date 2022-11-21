@@ -46,7 +46,7 @@
             border: 5px solid black;
             border-radius: 50px;
             background-image: linear-gradient(#fff, #eee);
-            box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
             text-align: center;
             margin: 10px;
             transition: 0.2s;
@@ -54,7 +54,7 @@
 
         .item:hover {
             transform: translate(0px, -10px);
-            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.35);
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.35), outset 0px 5px 10px rgba(0, 0, 0, 0.35);
         }
 
         .itemprev {
@@ -131,6 +131,7 @@
             <div class="item" title="0.50¢">
                 <h4>Spring gun</h4>
                 <img class="itemprev" src="../Assets/spring.svg" alt="Image failed" height="400" width="400" title="0.50¢">
+                <h4>Order</h4>
                 <button disabled class="order">
                     ERR 522: Form not ready
                 </button>
