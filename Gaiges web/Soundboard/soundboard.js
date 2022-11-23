@@ -36,3 +36,22 @@ hwg.src = './hwg.mp3';
 
 const omg = new Audio();
 omg.src = './oh mah gahd.mp3';
+
+let volumeslider = document.getElementById('volumeslider');
+
+function setVolume() {
+    boom.volume = volumeslider.value;
+    emotionaldamage.volume = volumeslider.value;
+    bird.volume = volumeslider.value;
+    fart.volume = volumeslider.value;
+    bababooey.volume = volumeslider.value;
+    notif.volume = volumeslider.value;
+    bruh.volume = volumeslider.value;
+    bruh.volume = volumeslider.value;
+    heheheha.volume = volumeslider.value;
+    mm.volume = volumeslider.value;
+    bonk.volume = volumeslider.value;
+    fart3.volume = volumeslider.value;
+    hwg.volume = volumeslider.value;
+    omg.volume = volumeslider.value;
+}
