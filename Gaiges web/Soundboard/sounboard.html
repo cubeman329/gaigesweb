@@ -22,52 +22,42 @@
             color: white;
         }
 
-        #aligner {
-            text-align: center;
+        #grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+            align-items: center;
         }
 
-        #soundDownload {
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
-        }
     </style>
     <title>Soundboard</title>
 </head>
 
-<body bgcolor="#212121">
-    <div id="aligner">
-        <h1>
-            quick download my favorite sound
-        </h1>
-        <br>
-        <a href="bird.mp3" download="burd.mp3">
-            <button id="soundDownload"><img src="icons.png" width="25" height"25"></button>
-        </a>
-        <br>
-
-        <hr>
+<body >
+    <div id="grid">
         <button onclick="boom.play()">Vine boom sound effect</button>
         <button onclick="emotionaldamage.play()">Emotional damage</button>
         <button onclick="bird.play()">Screaming bird sound effect</button>
         <button onclick="fart.play()">Fart reverb sound effect</button>
-        <br>
+        
         <button onclick="bababooey.play()">Bababooey sound effect</button>
         <button onclick="notif.play()">Android notification sound</button>
         <button onclick="bruh.play()">Bruh sound effect</button>
         <button onclick="heheheha.play()">HEHEHEHA</button>
-        <br>
+        
         <button onclick="mm.play()">MUSIC MAN</button>
         <button onclick="bonk.play()">Scout bonk sound effect</button>
         <button onclick="fart3.play()">Another fart sound effect</button>
         <button onclick="hwg.play()">Gamegrumps (i believe) here we go sound effect</button>
         <button onclick="omg.play()">oh mah gahd sound effect</button>
-        <br>
-        <br>
+        
+        
     </div>
-    <a href="../Home/home.html">
-        <button id="backbutton">Back</button>
-    </a>
+    <div style="bottom:0%; left: 0%;">
+        <a href="../Home/home.html">
+            <button id="backbutton">Back</button>
+        </a>            
+    </div>
     <script type="text/javascript" src="soundboard.js">
 
     </script>
