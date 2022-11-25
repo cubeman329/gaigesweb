@@ -78,6 +78,25 @@
                 bottom:10px;
                 position:fixed;
             }
+            .channelprev {
+                border-radius: 5px;
+            }
+            .channels {
+                border-radius: 5px;
+                margin: 5px;
+                background: dimgrey;
+            }
+            .channel {
+                background: linear-gradient(white 50%, darkgrey 50%, lightblue 100%);
+                border-radius: 7px;
+                border: 1px solid dimgrey;
+                box-shadow: inset -5px -3px 5px rgba(0, 0, 0, 0.25), outset 0px 0px 5px rgba(0, 0, 0, 0.25);
+                transition: 0.2s;
+            }
+            .channel:hover {
+                transform: translate(0px, -10px) scale(1.1);
+                box-shadow: outset 0px 5px 5px rgba(0, 0, 0, 0.25);
+            }
         </style>
     </head>
     <body bgcolor="black">
@@ -110,14 +129,13 @@
         <br>
         <hr>
         <br>
-        <div id="container">
-            <div id="buying">
-                <a href="../Buisness/buisness.html">
-                    <button id="bButton"><img src="busne.svg" width="25" height="25"></button>
-                </a>
+        <div class="channels">
+            <div class="channel">
+                Buisness
+                <br>
+                <img src="../Assets/buisness.svg" alt="buisness.svg" class="channelprev">
             </div>
-        </div>
-        
+        </div>        
         <br>
         <div id='hiring'>
 			<h1>im hiring now i guess</h4>
@@ -151,8 +169,20 @@
         <a href="mailto:28gaige.clever@warrenschools.com">
             <button id="contact">Contact me</button>
         </a>
-        <audio autoplay loop>
+        <audio id="backgroundmusic" autoplay loop>
             <source src="../Assets/ambiance.mp3" type="audio/mp3">
         </audio>
+
+        <script type="text/javascript">
+            const backgroundmusic = document.getElementById('backgroundmusic');
+
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState == 'visible') {
+                    backgroundmusic.play();
+                } else {
+                    backgroundmusic.pause();
+                }
+            })
+        </script>
     </body>
 </html>
