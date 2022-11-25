@@ -80,11 +80,18 @@
             }
             .channelprev {
                 border-radius: 5px;
+                height: auto;
+                width: auto;
             }
             .channels {
                 border-radius: 5px;
                 margin: 5px;
                 background: dimgrey;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-height: 600px;
+                overflow-y: scroll;
             }
             .channel {
                 background: linear-gradient(white 50%, darkgrey 50%, lightblue 100%);
