@@ -1,119 +1,143 @@
 <html>
-    <head>
-        <title>Home - Gaige's web</title>
-        <link rel="icon" href="../Assets/wababababobo.png" type="image/icon">
-        <link rel="stylesheet" type="text/css" href="home.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="The main page of Gaige's web">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-            #hiring {
-                font-family:monospace;font:monospace;
-            }
-            #contactme {
-                font-family:monospace;font:monospace;
-            }
-            .navbutton:hover {
-                filter: invert(100%);
-            }
-            body {
-                text-align:center;
-            }
-            h1 {
-                color:white;
-            }
-            h3 {
-                color:white;
-            }
-            p {
-                color:white;
-            }
-            h2 {
-                color:white;
-            }
-            #congrats {
-                font-family: 'Ubuntu', sans-serif;
-                background:#5865F2;
-                border:5px;
-                border-radius:5px;
-                color: white;
-                text-align:center;
-            }
-            #aligner {
-                text-align:center;
-            }
-            #buttoncolor {
-                text-align:center;
-                background:#b80000;
-            }
-            #worklog {
-                background:#5865F2;
-                border-radius:5px;
-                color:white;
-                border-color:white;
-                border:5px;
-                border-width:5px;
-            }
-            #buying {
-                border-color:black;
-                text-align:center;
-                border-radius:3px;
-            }
-            button {
-                border-radius: 5px;
-                border: 1px solid dimgrey;
-                font-family: 'Ubuntu', sans-serif;
-                background-image:linear-gradient(#eee 50%, #d3d3d3 50%, #eee 100%);
-                box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
-                transition: 0.2s;
 
-            }
-            button:hover {
-                transform:scale(1.1);
-                box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-            }
-            #contact {
-                z-index:9999999;
-                left:10px;
-                bottom:10px;
-                position:fixed;
-            }
-            .channelprev {
-                border-radius: 5px;
-                height: 400px;
-                width: 400px;
-            }
-            .channels {
-                border-radius: 5px;
-                margin: 5px;
-                background: dimgrey;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                max-height: 600px;
-                overflow-y: scroll;
-            }
-            .channel {
-                background: linear-gradient(white 50%, darkgrey 50%, lightblue 100%);
-                border-radius: 7px;
-                border: 1px solid dimgrey;
-                box-shadow: inset -5px -3px 5px rgba(0, 0, 0, 0.25), outset 0px 0px 5px rgba(0, 0, 0, 0.25);
-                transition: 0.2s;
-                font-family: 'Ubuntu', sans-serif;
-                width: auto;
-            }
-            .channel:hover {
-                transform: translate(0px, -10px) scale(1.1);
-                box-shadow: outset 0px 5px 5px rgba(0, 0, 0, 0.25);
-            }
-        </style>
-    </head>
-    <body bgcolor="black">
-        <img src="Gaige's web_.png">
-        <br>
-        <img src="home.png">
-        <br>
-        <div id="buttoncolor">
+<head>
+    <title>Home - Gaige's web</title>
+    <link rel="icon" href="../Assets/wababababobo.png" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="The main page of Gaige's web">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        #hiring {
+            font-family: monospace;
+            font: monospace;
+        }
+
+        #contactme {
+            font-family: monospace;
+            font: monospace;
+        }
+
+        .navbutton:hover {
+            filter: invert(100%);
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        #congrats {
+            font-family: 'Ubuntu', sans-serif;
+            background: #5865F2;
+            border: 5px;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        #aligner {
+            text-align: center;
+        }
+
+        #buttoncolor {
+            text-align: center;
+            background: #b80000;
+        }
+
+        #worklog {
+            background: #5865F2;
+            border-radius: 5px;
+            color: white;
+            border-color: white;
+            border: 5px;
+            border-width: 5px;
+        }
+
+        #buying {
+            border-color: black;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        button {
+            border-radius: 5px;
+            border: 1px solid dimgrey;
+            font-family: 'Ubuntu', sans-serif;
+            background-image: linear-gradient(#eee 50%, #d3d3d3 50%, #eee 100%);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+            transition: 0.2s;
+
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        #contact {
+            z-index: 9999999;
+            left: 10px;
+            bottom: 10px;
+            position: fixed;
+        }
+
+        .channelprev {
+            border-radius: 5px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .channels {
+            border-radius: 5px;
+            margin: 5px;
+            background: dimgrey;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-height: 600px;
+            overflow-y: scroll;
+        }
+
+        .channel {
+            background: linear-gradient(white 50%, darkgrey 50%, lightblue 100%);
+            border-radius: 7px;
+            border: 1px solid dimgrey;
+            box-shadow: inset -5px -3px 5px rgba(0, 0, 0, 0.25), outset 0px 0px 5px rgba(0, 0, 0, 0.25);
+            transition: 0.2s;
+            font-family: 'Ubuntu', sans-serif;
+            width: auto;
+        }
+
+        .channel:hover {
+            transform: translate(0px, -10px) scale(1.1);
+            box-shadow: outset 0px 5px 5px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <img src="Gaige's web_.png">
+    <br>
+    <img src="home.png">
+    <br>
+    <div id="buttoncolor">
         <button id="home" disabled="disabled" class="navbutton">Home</button>
         <a href="../Social media/social.html">
             <button class="navbutton" id="social">Social media</button>
@@ -126,7 +150,7 @@
             <button class="navbutton" id="memes">memes</button>
         </a>
         <a href="../Soundboard/sounboard.html">
-            <button class="navbutton" id="soundboard">Soundboard</button> 
+            <button class="navbutton" id="soundboard">Soundboard</button>
         </a>
         <a href="../Chat/chat.html">
             <button class="navbutton" id="chat">Chat</button>
@@ -135,64 +159,65 @@
             <button class="navbutton">Services</button>
         </a>
     </div>
-        <br>
-        <hr>
-        <br>
-        <div class="channels">
-            <div class="channel">
-                Buisness
-                <br>
-                <img src="../Assets/buisness.svg" alt="buisness.svg" class="channelprev">
-            </div>
-        </div>        
-        <br>
-        <div id='hiring'>
-			<h1>im hiring now i guess</h4>
-			<p>email me if you want a job i guess ill have to train you though</p>
-			<a href="mailto:28gaige.clever@warrenschools.com">email me here</a>
-		</div>
-        <br>
-					<h4>Some pages are not here yet or are not the same as they were</h4>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id='congrats'>
-			<h4>My opinion on things right now:</h4>
+    <br>
+    <hr>
+    <br>
+    <div class="channels">
+        <div class="channel">
+            Buisness
             <br>
-            <p> i hate breathing, ww3 is close cya</p>
+            <img src="../Assets/buisness.svg" alt="buisness.svg" class="channelprev">
         </div>
+    </div>
+    <br>
+    <div id='hiring'>
+        <h1>im hiring now i guess</h4>
+            <p>email me if you want a job i guess ill have to train you though</p>
+            <a href="mailto:28gaige.clever@warrenschools.com">email me here</a>
+    </div>
+    <br>
+    <h4>Some pages are not here yet or are not the same as they were</h4>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id='congrats'>
+        <h4>My opinion on things right now:</h4>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>SAVE ME</h1>
-        <br>
-        <img src="chicken_man.png">
-        <br>
-        
-        <h4 id="contactme">contact me if you have any suggestions.</h4>
-        <a href="mailto:28gaige.clever@warrenschools.com">
-            <button id="contact">Contact me</button>
-        </a>
-        <audio id="backgroundmusic" autoplay loop>
-            <source src="../Assets/ambiance.mp3" type="audio/mp3">
-        </audio>
+        <p> i hate breathing, ww3 is close cya</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>SAVE ME</h1>
+    <br>
+    <img src="chicken_man.png">
+    <br>
 
-        <script type="text/javascript">
-            const backgroundmusic = document.getElementById('backgroundmusic');
+    <h4 id="contactme">contact me if you have any suggestions.</h4>
+    <a href="mailto:28gaige.clever@warrenschools.com">
+        <button id="contact">Contact me</button>
+    </a>
+    <audio id="backgroundmusic" autoplay loop>
+        <source src="../Assets/ambiance.mp3" type="audio/mp3">
+    </audio>
 
-            document.addEventListener('visibilitychange', () => {
-                if (document.visibilityState == 'visible') {
-                    backgroundmusic.play();
-                } else {
-                    backgroundmusic.pause();
-                }
-            })
-            console.log(bruh);
-        </script>
-    </body>
+    <script type="text/javascript">
+        const backgroundmusic = document.getElementById('backgroundmusic');
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState == 'visible') {
+                backgroundmusic.play();
+            } else {
+                backgroundmusic.pause();
+            }
+        })
+        console.log(bruh);
+    </script>
+</body>
+
 </html>
