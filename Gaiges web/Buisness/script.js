@@ -8,5 +8,5 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-const anchor = document.querySelector('a');
+const anchor = document.querySelectorAll('a');
 anchor.target = "_blank";
