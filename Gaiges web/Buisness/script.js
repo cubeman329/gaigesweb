@@ -7,3 +7,6 @@ document.addEventListener('visibilitychange', () => {
         backgroundAudio.pause();
     }
 });
+
+const anchor = document.querySelector('a');
+anchor.target = "_blank";
