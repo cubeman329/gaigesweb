@@ -8,5 +8,6 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-const anchor = document.querySelectorAll('a');
-anchor.target = "_blank";
+
+const anchor = document.getElementById('nl');
+anchor.target = '_blank';
