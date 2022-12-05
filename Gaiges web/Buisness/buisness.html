@@ -26,10 +26,12 @@
             color: white;
 
         }
+
         @font-face {
             font-family: maro;
             src: url(../Assets/SuperMario256.ttf);
         }
+
         .menu {
             display: flex;
             flex-wrap: wrap;
@@ -42,7 +44,7 @@
         }
 
         .item {
-            
+
             border: 0;
             border-radius: 20px;
             background: whitesmoke;
@@ -85,9 +87,9 @@
             padding-top: 3px;
             font-size: 20px;
             font-family: 'Ubuntu', sans-serif;
-            background:black;
+            background: black;
             color: white;
-            
+
             border-radius: 0px 0px 5px 5px;
             border: 1px solid white;
             transition: 0.1s;
@@ -101,9 +103,11 @@
         #m {
             font-family: maro, sans-serif;
         }
+
         h4 {
             margin: 1px;
         }
+
         p {
             margin: 1px;
         }
@@ -126,8 +130,7 @@
         <div class="menu">
             <div class='item' title='$1.50'>
                 <h4>Soda</h4>
-                <img class='itemprev'
-                    src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image.png"
+                <img class='itemprev' src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image.png"
                     alt='Image failed' title='1.50¢' height='200' width='200'>
                 <h4>Order</h4>
                 <a href="https://forms.gle/uRXujwumgwcFMjQk7">
@@ -140,15 +143,18 @@
             </div>
             <div class="item" title="0.50¢">
                 <h4>Spring gun</h4>
-                <img class="itemprev" src="../Assets/spring.svg" alt="Image failed" height="400" width="400" title="0.50¢">
+                <img class="itemprev" src="../Assets/spring.svg" alt="Image failed" height="400" width="400"
+                    title="0.50¢">
                 <h4>Order</h4>
-                <button disabled class="order">
-                    ERR 522: Form not ready
-                </button>
+                <a href="https://forms.gle/cDHvGFwQZ9ZVQZJT9">
+                    <button class="order">
+                        Order
+                    </button>
+                </a>
                 <p>Order now! (1 left)</p>
             </div>
         </div>
-        
+
     </div>
     <audio autoplay loop>
         <source src="shop.mp3" type='audio/mp3'>
