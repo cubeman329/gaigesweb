@@ -38,9 +38,10 @@
             justify-content: left;
             align-items: center;
             border: 3px solid black;
+            z-index: 10000000000000000;
             border-radius: 10px;
             background: #eee;
-            margin: 0;
+            margin: 0px;
         }
 
         .item {
@@ -68,7 +69,8 @@
         .order {
             background-image: linear-gradient(white 50%, lightgrey 50%, white 100%);
             border-radius: 5px;
-            border: 2px solid #222;
+            box-shadow: 0 0 3px 0 black;
+            border: 0px;
             transition: 0.1s;
 
         }
@@ -112,11 +114,19 @@
             margin: 1px;
         }
         .b {
-            border-radius: 5px, 5px, 0, 0;
-            background-color: whitesmoke;
+            border-radius: 5px 5px 0px 0px;
             margin: 0px;
-            bottom: 0px;
-            transform: translate(0px, 5px);
+            z-index: 1;
+            padding-top: 1px;
+            padding-right: 5px;
+            padding-left: 1px;
+            transform: translate(10px, 21px);
+            background: #eee;
+            padding-bottom: 0px;
+            width: 100px;
+            box-shadow: 0 0 3px 0 black;
+            top: 100px;
+            z-index: 0;
         }
     </style>
 </head>
