@@ -1,9 +1,6 @@
 body {
     background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
   .cube {
     border-radius:0px;
     width: 60px;
