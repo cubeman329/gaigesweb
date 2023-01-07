@@ -129,6 +129,10 @@
             top: 100px;
             z-index: 0;
         }
+        .oos {
+            color: red;
+            font-style: bold italic underline oblique;
+        }
     </style>
 </head>
 
@@ -169,7 +173,16 @@
                         Order
                     </button>
                 </a>
-                <p>Out of stock</p>
+                <p><span class="oos">Out Of Stock</span></p>
+            </div>
+            <div class="item" title="$4.00">
+                <h4>Chocolate</h4>
+                <img class="itemprev" src="../Assets/R.png" alt="Image failed" height="400" width="400" title="$4.00">
+                <h4>Order</h4>
+                <button class="order" disabled>
+                    <span class="oos">GW ERR: 522: FORM NOT READY</span>
+                </button>
+                <p> <span class="oos">Out Of Stock</span> </p>
             </div>
         </div>
 
