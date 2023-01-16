@@ -123,6 +123,21 @@
             </span>
         </div>
     </div>
+
+
+    <audio autoplay loop>
+        <source src="../Assets/tmt.mp3">
+    </audio>
+    <script type="text/javascript">
+        const audio = document.querySelector('audio');
+        document.addEventListener('visibilitychange', () => {
+            if (!document.visibilityState == 'visible') {
+                audio.pause
+            } else {
+                audio.play;
+            }
+        })
+    </script>
 </body>
 
 </html>
