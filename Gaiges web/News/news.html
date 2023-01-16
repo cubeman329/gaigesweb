@@ -16,6 +16,8 @@
             background-attachment: fixed;
             font-family: 'Ubuntu', sans-serif;
             color: white;
+            margin: 0px;
+            text-align: center;
 
         }
 
@@ -24,15 +26,19 @@
             src: url('../Assets/mariokart.ttf');
         }
 
-        h1 {
+        .h1 {
             font-family: mariok;
         }
 
-        .important {
+        .news {
+            text-align: left;
             border-radius: 10px;
             background: #333;
             color: white;
             margin: 10px;
+            padding-left: 5px;
+            padding-bottom: 1px;
+            padding-top: 1px;
         }
 
         .submit {
@@ -53,23 +59,30 @@
             box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.25);
 
         }
-        
+
 
         #marg {
             margin: 10px;
             display: flex;
             justify-content: left;
         }
+
         img {
             margin: 2px;
+        }
+        a {
+            color: lightblue;
+        }
+        a:visited {
+            font-style: italic;
         }
     </style>
 </head>
 
 <body>
-    <h1>News Channel</h1>
+    <h1 class="h1">News Channel</h1>
     <br>
-    <div class="important">
+    <div class="news">
         <div id="marg">
             <img src="../Assets/wababababobo.png" height="50px" width="50px">
             <span id="heading">Welcome!
@@ -90,6 +103,23 @@
                 <a href="https://forms.gle/Xvo3b4PHSQUs1DRKA">
                     <button class="submit">Submit an article</button>
                 </a>
+            </span>
+        </div>
+    </div>
+    <hr>
+    <div class="news">
+        <div class="news">
+            <img src="../Assets/wababababobo.png" height="50" width="50">
+            <span id="heading">Don't let the teachers know about this website!
+                <p>There is a website called <a href="https://3kho.github.io">3kho.github.io</a>. Its like UBG100 but
+                    with more stuff and its unblocked still.
+                    You can play games, chat with friends, almost anything fun that you can think of. Don't tell the
+                    teachers about my website either, because they
+                    will see this and then they will report it to whoever is in charge up there and then it will be
+                    blocked.</p>
+                    <p>Now, lets talk about somethings included with 3kho. There are tons of games like I said before, way more than ubg100, some of those games include, Sam Hogan's Cell machine, Tunnel rush, Super Mario 64, etc. My personal favorite is probably "Santy's home," a horror game. This is my go to website for gaming, now that UBG100 is gone.</p>
+                    <br>
+                    <p>posted at 22:50, (10:50 PM) CDT</p>
             </span>
         </div>
     </div>
