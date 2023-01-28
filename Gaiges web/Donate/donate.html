@@ -11,10 +11,12 @@
 
         body {
 
-            background: black;
+            background: radial-gradient(circle at top left, white, black 75%);
             color: white;
             font-family: Ubuntu, sans-serif;
-            text-shadow: 0 0 10px white;
+            text-shadow: 0 0 10px black;
+            box-shadow: inset 0px 0px rgba(0, 0, 0, 0.5);
+            background-attachment: fixed;
 
         }
 
@@ -27,8 +29,12 @@
             align-items: center;
 
         }
+        iframe {
+            
+            border-radius: 10px;
+        }
         iframe::backdrop {
-            background: grey;
+            background: white;
         }
     </style>
 </head>
