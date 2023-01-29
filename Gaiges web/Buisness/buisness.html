@@ -49,7 +49,7 @@
             border: 0;
             border-radius: 20px;
             background: whitesmoke;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset 0 -1px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset 0 -2px 3px rgba(0, 0, 0, 0.5);
             text-align: center;
             margin: 10px;
             transition: 0.2s;
@@ -104,6 +104,7 @@
         #m {
             font-family: maro, sans-serif;
             transform: translate(0, -15px);
+            font-size: x-large;
         }
 
         h4 {
@@ -113,6 +114,7 @@
         p {
             margin: 1px;
         }
+
         .b {
             border-radius: 5px 5px 0px 0px;
             margin: 0px;
@@ -123,12 +125,13 @@
             transform: translate(10px, 21px);
             background: #eee;
             padding-bottom: 0px;
-            width: 100px;
+            width: fit-content;
 
-            box-shadow: 0 0 3px 0 black;
+            box-shadow: 0 -2px 0px 2px black;
             top: 100px;
             z-index: 0;
         }
+
         .oos {
             color: red;
             font-style: bold italic underline oblique;
@@ -145,36 +148,63 @@
         <p>Hover for price</p>
         <br>
     </div>
-    <div class='container'>
-        <div class="b">
-            <h1 id="m">Menu</h1>
+    <div>
+        <div class="b e">
+            <h1 id="m">Entertainment</h1>
         </div>
         <div class="menu">
-            <div class='item' title='$1.50'>
-                <h4>Soda</h4>
-                <img class='itemprev' src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image.png"
-                    alt='Image failed' title='1.50¢' height='200' width='200'>
-                <h4>Order</h4>
-                <a href="https://forms.gle/uRXujwumgwcFMjQk7" id="nl">
-                    <button class="order">
-                        Order
-                    </button>
-                </a>
-                <p>In stock.</p>
-
-            </div>
             <div class="item" title="0.50¢">
-                <h4>Spring gun</h4>
-                <img class="itemprev" src="../Assets/spring.svg" alt="Image failed" height="400" width="400"
-                    title="0.50¢">
-                <h4>Order</h4>
+                <h4>Untitled</h4>
+                <img class="itemprev" src="../Assets/sprinddddg.svg" alt="" height="400" width="400"
+                    title="???">
+                <h4>Untitled</h4>
                 <a href="https://forms.gle/cDHvGFwQZ9ZVQZJT9" id="nl">
                     <button class="order">
-                        Order
+                        Untitled
                     </button>
                 </a>
-                <p><span class="oos">Out Of Stock</span></p>
+                <p><span class="oos">Untitled</span></p>
             </div>
+            <div class="item" title="0.50¢">
+                <h4>Upload your own item!</h4>
+                <img src="../Assets/upload.svg" alt="Image failed" class="itemprev">
+                <h4>Upload</h4>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=28gaige.clever@warrenschools.com&su=Upload%20Item&body=Item:%20%20%20%20%20%20Price:%20%20%20%20%20%20Where%20do%20you%20supply%20me:%20%20%20%20%20%20%20%20%20%20Make%20sure%20to%20upload%20an%20image%20for%20your%20product">
+                    <button class="order">
+                        Upload
+                    </button>
+                </a>
+                <p>Upload</p>
+            </div>
+        </div>
+        <div class="b">
+            <h1 id="m">Food & drink</h1>
+        </div>
+        <div class="menu">
+            <div class="item" title="$1.50">
+                <h4>Soda</h4>
+                <img class="itemprev" alt="Image failed" height="400" width="400"
+                    src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image.png">
+                <h4>Order</h4>
+                <a href="https://forms.gle/uRXujwumgwcFMjQk7">
+                    <button class="order">Order</button>
+                </a>
+                <p>In stock</p>
+            </div>
+            <div class="item" title="0.50¢">
+                <h4>Gum</h4>
+                <img src="../Assets/hic1rgeo1syii2ebj87c.avif" alt="Image failed" class="itemprev" height="400"
+                    width="400">
+                <h4>Order</h4>
+                <button class="order" disabled>
+                    <span class="oos">ERR: 522: FORM NOT READY</span>
+                </button>
+                <p>In stock</p>
+                <p>Flavors are limited to <br><code>polar ice, peppermint, spearmint,<br> watermelon, Fruit Mix.</code>
+                </p>
+            </div>
+        </div>
+
         </div>
     </div>
     <audio id="bruh" autoplay loop>
