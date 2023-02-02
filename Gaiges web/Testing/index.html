@@ -3,45 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-Frame Options" content="sameorigin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movement testing</title>
-
-
-    <style>
-        canvas {
-            border: 1px dashed white;
-            animation: 1.5s infinite alternate colorch;
-            background: black;
-            border-radius: 10px;
-            
-        }
-        h1 {
-            filter: drop-shadow(0px 0px 5px black);
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        @keyframes colorch {
-            0% {
-                filter: invert(0%);
-            }
-
-            100% {
-                filter: invert(100%) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
 </head>
 
 <body>
-    <h1>Movement testing</h1>
-    <canvas id="canvas" height="200" width="200">
+    <div class="ring"></div>
 
-    </canvas>
-    <script src="script.js">
-
-    </script>
 </body>
 
 </html>

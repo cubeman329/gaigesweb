@@ -1,0 +1,29 @@
+body {
+    background: #111;
+    color: white;
+}
+  .ring {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+
+}
+  .ring::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: cyan;
+    position: absolute;
+    transform: translate(67px, -5px);
+    border-radius: 110%;
+    box-shadow: 0px 0px 10px 10px #00ffff20, 0px 0px 10px 15px #00ffff30, 0px 0px 30px 30px #00ffff10;
+}
+@keyframes rotate {
+    0% {
+        transform:rotate(0deg); 
+    }
+    100% {
+        transform:rotate(-360deg);
+    }
+}
