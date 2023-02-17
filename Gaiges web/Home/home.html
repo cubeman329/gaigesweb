@@ -8,6 +8,10 @@ html>
     <meta name="description" content="The main page of Gaige's web">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @font-face {
+            font-family: New Rodin;
+            src: url('../Assets/newrodin.otf');
+        }
 
         #hiring {
             font-family: monospace;
@@ -133,7 +137,7 @@ html>
             border: 1px solid dimgrey;
             box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.25), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
             transition: 0.2s;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: New Rodin;
             width: auto;
             height: 260px;
             margin: 5px;
@@ -155,6 +159,13 @@ html>
             padding: 10px;
 
         }
+        #hg {
+            font-family: New Rodin;
+            font-size: 75px;
+        }
+        h2 {
+            font-family: New Rodin;
+        }
     </style>
 </head>
 
@@ -166,10 +177,9 @@ html>
             </button>
         </a>
     </div>
-    <img src="Gaige's web_.png">
+    <h1 id="hg">gWeb</h1>
     <br>
-    <img src="home.png">
-    <br>
+
     <div id="buttoncolor">
         <button id="home" disabled="disabled" class="navbutton">Home</button>
         <a href="../Social media/social.html">
