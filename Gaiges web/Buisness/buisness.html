@@ -31,6 +31,10 @@
             font-family: maro;
             src: url(../Assets/SuperMario256.ttf);
         }
+        @font-face {
+            font-family: newrodin;
+            src: url(../Assets/newrodin.otf);
+        }
 
         .menu {
             display: flex;
@@ -45,7 +49,7 @@
         }
 
         .item {
-
+            font-family: newrodin;
             border: 0;
             border-radius: 20px;
             background: whitesmoke;
@@ -108,11 +112,12 @@
         }
 
         h4 {
-            margin: 1px;
+            margin: 0px;
+            font-size: 10px;
         }
 
         p {
-            margin: 1px;
+            margin: 0px;
         }
 
         .b {
@@ -199,12 +204,13 @@
                 <button class="order" disabled>
                     <span class="oos">ERR: 522: FORM NOT READY</span>
                 </button>
-                <p>In stock</p>
-                <p>Flavors are limited to <br><code>polar ice, peppermint, spearmint,<br> watermelon, Fruit Mix.</code>
-                </p>
-            </div>
-        </div>
+                <br>
+                <button id="infobtn" class="order" onclick="inf.style = 'display:static;'; info.innerText = 'double click to hide info'" ondblclick="inf.style = 'display:none;'; info.innerText = 'info'">info</button>
 
+            </div>
+            <p id="info" style="display:none;">Flavor is currently: <br><code>Crystal mint, polar ice</code></p>
+        </div>
+        
         </div>
     </div>
     <audio id="bruh" autoplay loop>
