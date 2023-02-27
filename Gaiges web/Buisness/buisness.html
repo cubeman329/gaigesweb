@@ -31,6 +31,7 @@
             font-family: maro;
             src: url(../Assets/SuperMario256.ttf);
         }
+
         @font-face {
             font-family: newrodin;
             src: url(../Assets/newrodin.otf);
@@ -143,14 +144,17 @@
             color: red;
             font-style: bold italic underline oblique;
         }
+
         #adds {
             background-image: linear-gradient(#00000000, #44c744cd);
             box-shadow: 0px 0px 10px #44c744cd;
         }
+
         #icm {
             background: linear-gradient(#00000000, #3ddebecd);
             box-shadow: 0px 0px 10px #3ddebecd;
         }
+
         #psi {
             background: linear-gradient(#00000000, #2762cfcb);
             box-shadow: 0px 0px 10px #2762cfcb;
@@ -174,8 +178,7 @@
         <div class="menu">
             <div class="item" title="0.50¢">
                 <h4>Untitled</h4>
-                <img class="itemprev" src="../Assets/sprinddddg.svg" alt="" height="400" width="400"
-                    title="???">
+                <img class="itemprev" src="../Assets/sprinddddg.svg" alt="" height="400" width="400" title="???">
                 <h4>Untitled</h4>
                 <a href="./.txt" id="nl">
                     <button class="order">
@@ -188,7 +191,8 @@
                 <h4>Upload your own item!</h4>
                 <img src="../Assets/upload.svg" alt="Image failed" class="itemprev">
                 <h4>Upload</h4>
-                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=28gaige.clever@warrenschools.com&su=Upload%20Item&body=Item:%20%20%20%20%20%20Price:%20%20%20%20%20%20Where%20do%20you%20supply%20me:%20%20%20%20%20%20%20%20%20%20Make%20sure%20to%20upload%20an%20image%20for%20your%20product">
+                <a
+                    href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=28gaige.clever@warrenschools.com&su=Upload%20Item&body=Item:%20%20%20%20%20%20Price:%20%20%20%20%20%20Where%20do%20you%20supply%20me:%20%20%20%20%20%20%20%20%20%20Make%20sure%20to%20upload%20an%20image%20for%20your%20product">
                     <button class="order">
                         Upload
                     </button>
@@ -215,28 +219,34 @@
                 <img src="../Assets/icebiceccrysmin.webp" alt="Image failed" id="icm" class="itemprev" height="400"
                     width="400">
                 <h4>Order</h4>
-                <button class="order" disabled>
-                    <span class="oos">ERR: 522: FORM NOT READY</span>
-                </button>
+                <a href="https://forms.gle/MYcu6w74MdN9Ls6w5">
+                    <button class="order">
+                        Order
+                    </button>
+                </a>
                 <br>
-                <button id="infobtn" class="order" onclick="inf.style = 'display:static;'; info.innerText = 'double click to hide info'" ondblclick="inf.style = 'display:none;'; info.innerText = 'info'">info</button>
+                <button id="infobtn" class="order"
+                    onclick="inf.style = 'display:static;'; info.innerText = 'double click to hide info'"
+                    ondblclick="inf.style = 'display:none;'; info.innerText = 'info'">info</button>
 
             </div>
-            <p id="info" style="display:none;">Flavor is currently: <br><code>Crystal mint</code> <br>Stock: <br><code>In stock</code> </p>
+            <p id="info" style="display:none;">Flavor is currently: <br><code>Crystal mint</code> <br>Stock:
+                <br><code>In stock</code>
+            </p>
             <div class="item" title="$4">
                 <h4>(LIMITIED TIME OFFER)</h4>
                 <p>Kiwi watermelon (full pack)</p>
                 <img src="../Assets/kiwik.webp" alt="Image failed" class="itemprev" id="adds" height="400" width="400">
                 <h4>Order</h4>
-                <button class="order" disabled>
-                    <span class="oos"> ERR: 522: FORM NOT READY</span>
-                </button>
+                <a href="https://forms.gle/JdNFaY41a6zdWpdV8">
+                    <button class="order">Sign up for raffle</button>
+                </a>
                 <br>
                 <p><span style="color:green;">In stock</span></p>
             </div>
         </div>
-        
-        </div>
+
+    </div>
     </div>
     <audio id="bruh" autoplay loop>
         <source src="shop.mp3" type='audio/mp3'>
