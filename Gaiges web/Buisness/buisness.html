@@ -65,6 +65,7 @@
         }
 
         .itemprev {
+            border-radius: 15px;
             box-shadow: inset 0 0 1px 0 dimgray;
             height: 200px;
             width: 200px;
@@ -114,6 +115,7 @@
         h4 {
             margin: 0px;
             font-size: 10px;
+            text-shadow: 0px 0px 5px black;
         }
 
         p {
@@ -141,6 +143,18 @@
             color: red;
             font-style: bold italic underline oblique;
         }
+        #adds {
+            background-image: linear-gradient(#00000000, #44c744cd);
+            box-shadow: 0px 0px 10px #44c744cd;
+        }
+        #icm {
+            background: linear-gradient(#00000000, #3ddebecd);
+            box-shadow: 0px 0px 10px #3ddebecd;
+        }
+        #psi {
+            background: linear-gradient(#00000000, #2762cfcb);
+            box-shadow: 0px 0px 10px #2762cfcb;
+        }
     </style>
 </head>
 
@@ -163,7 +177,7 @@
                 <img class="itemprev" src="../Assets/sprinddddg.svg" alt="" height="400" width="400"
                     title="???">
                 <h4>Untitled</h4>
-                <a href="https://forms.gle/cDHvGFwQZ9ZVQZJT9" id="nl">
+                <a href="./.txt" id="nl">
                     <button class="order">
                         Untitled
                     </button>
@@ -183,12 +197,12 @@
             </div>
         </div>
         <div class="b">
-            <h1 id="m">Food & drink</h1>
+            <h1 id="m">Consumables</h1>
         </div>
         <div class="menu">
             <div class="item" title="$1.50">
                 <h4>Soda</h4>
-                <img class="itemprev" alt="Image failed" height="400" width="400"
+                <img class="itemprev" alt="Image failed" id="psi" height="400" width="400"
                     src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image.png">
                 <h4>Order</h4>
                 <a href="https://forms.gle/uRXujwumgwcFMjQk7">
@@ -198,7 +212,7 @@
             </div>
             <div class="item" title="0.50¢">
                 <h4>Gum</h4>
-                <img src="../Assets/icebiceccrysmin.webp" alt="Image failed" class="itemprev" height="400"
+                <img src="../Assets/icebiceccrysmin.webp" alt="Image failed" id="icm" class="itemprev" height="400"
                     width="400">
                 <h4>Order</h4>
                 <button class="order" disabled>
@@ -208,7 +222,18 @@
                 <button id="infobtn" class="order" onclick="inf.style = 'display:static;'; info.innerText = 'double click to hide info'" ondblclick="inf.style = 'display:none;'; info.innerText = 'info'">info</button>
 
             </div>
-            <p id="info" style="display:none;">Flavor is currently: <br><code>Crystal mint, polar ice</code></p>
+            <p id="info" style="display:none;">Flavor is currently: <br><code>Crystal mint</code> <br>Stock: <br><code>In stock</code> </p>
+            <div class="item" title="$4">
+                <h4>(LIMITIED TIME OFFER)</h4>
+                <p>Kiwi watermelon (full pack)</p>
+                <img src="../Assets/kiwik.webp" alt="Image failed" class="itemprev" id="adds" height="400" width="400">
+                <h4>Order</h4>
+                <button class="order" disabled>
+                    <span class="oos"> ERR: 522: FORM NOT READY</span>
+                </button>
+                <br>
+                <p><span style="color:green;">In stock</span></p>
+            </div>
         </div>
         
         </div>
