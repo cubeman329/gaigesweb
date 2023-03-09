@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us</title>
+    <style>
+        @font-face {
+            font-family: Shin-go;
+            src: url(../Assets/AOTFShinGoProRegular.otf);
+        }
+
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 60.64601186552406vw 39.3539881345vw;
+        }
+
+        #screen {
+            margin: 0;
+            padding: 0;
+            height: 680px;
+            width: 920px;
+        }
+
+        .titleinfo {
+            text-align: center;
+            font-family: Shin-go;
+            text-shadow: 0px 0px 5px white;
+        }
+        button {
+            font-family: Shin-go;
+            text-shadow: 0px 0px 5px white;
+            border: 1px solid white;
+            border-radius: 10px;
+            height: 100px;
+            font-size: 50px;
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="screen" src="https://among-us-online-fan-remake.1tim.repl.co" scrolling="no" frameborder="1"
+        allowfullscreen></iframe>
+    <div class="titleinfo">
+        <h1><strong>Among us</strong></h1>
+        <br>
+        <br>
+        <p>Among us is a free, online game where there are a bunch of little crewmates on an airship, there is at least
+            one impostor <i>Among us</i></p>
+        <br>
+        <img src="https://assets.stickpng.com/images/6002f9d851c2ec00048c6c78.png" alt="among us" height="200" width="200">
+    </div>
+    <button onclick="goFullscreen('screen'); return false">Fullscreen</button>
+
+    <script>
+        function goFullscreen(id) {
+            var element = document.getElementById(id);
+            if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
