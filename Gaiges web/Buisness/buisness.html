@@ -63,6 +63,7 @@
         .item:hover {
             transform: translate(0px, -10px);
             box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.35), outset 0px 5px 10px rgba(0, 0, 0, 0.35);
+            animation: ease-out move infinite alternate 1s;
         }
 
         .itemprev {
@@ -161,6 +162,14 @@
         }
         .inst {
             color: green;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -10);
+            }
         }
     </style>
 </head>

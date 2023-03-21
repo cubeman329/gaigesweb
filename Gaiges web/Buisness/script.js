@@ -13,3 +13,6 @@ const anchor = document.getElementById('nl');
 anchor.target = '_blank';
 let inf = document.getElementById('info');
 let info = document.getElementById('infobtn');
+
+let untitled = document.getElementById('nuk');
+
