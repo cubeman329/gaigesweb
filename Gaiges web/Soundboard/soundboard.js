@@ -37,6 +37,8 @@ hwg.src = './hwg.mp3';
 const omg = new Audio();
 omg.src = './oh mah gahd.mp3';
 
+const bup = new Audio('./bup.mp3');
+
 let volumeslider = document.getElementById('volumeslider');
 
 function setVolume() {
@@ -54,4 +56,5 @@ function setVolume() {
     fart3.volume = volumeslider.value;
     hwg.volume = volumeslider.value;
     omg.volume = volumeslider.value;
+    bup.volume = volumeslider.value;
 }
