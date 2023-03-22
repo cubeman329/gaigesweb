@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game loader</title>
+    <style>
+        @font-face {
+            font-family: Shin-Go;
+            src: url(../Assets/AOTFShinGoProRegular.otf);
+        }
+
+        body {
+            background: radial-gradient(circle at 50% -100%, dimgrey, black);
+            background-attachment: fixed;
+            display: grid;
+            margin: 0;
+            padding: 0;
+            grid-template-columns: 50vw 50vw;
+            grid-template-rows: 50vh 50vh;
+        }
+
+        .gameico {
+            height: 13.183915622940013vw;
+            width: 13.183915622940013vw;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+        }
+
+        .games {
+            border: 2px solid black;
+            background: linear-gradient(white, #ddd);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 15.161502966381015vw 15.161502966381015vw 15.161502966381015vw;
+            box-shadow: inset 0px 0px 10px dimgrey;
+            overflow-y: scroll;
+        }
+
+        .game {
+            font-family: Shin-Go;
+            text-align: center;
+            margin: 5px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            font-style: normal;
+            color: black;
+        }
+        h1 {
+            margin: 0px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="games" title="IO Games">
+        <a href="https://usasword.herokuapp.com">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>SwordBattle.io</h4>
+            </div>
+        </a>
+        <a href="https://erth2.party">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Erth2</h4>
+            </div>
+        </a>
+    </div>
+    <div class="games" title="Other games">
+        <a href="https://precisionclient-b4olinapz-banana-nana.vercel.app/">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Minecraft (v1.5.2, precision cli)</h4>
+            </div>
+        </a>
+        <a href="../tunnel-rush/index.html">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Tunnel Rush</h4>
+            </div>
+        </a>
+        <a href="../getaway-shootout/index.html">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Getaway Shootout</h4>
+            </div>
+        </a>
+        <a href="https://among-us-online-fan-remake.1tim.repl.co">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Among Us</h4>
+            </div>
+        </a>
+        <a href="https://sm64web.clambam10.repl.co/f.html" target="_blank">
+            <div class="game">
+                <img src="../Assets/controller.png" alt="" class="gameico"><br>
+                <h4>Super Mario 64</h4>
+            </div>
+        </a>
+    </div>
+    <div class="games" title="Misc">
+        <a href="https://beepbox.co">
+            <div class="game">
+                <img src="../Assets/thej.svg" alt="" class="gameico"><br>
+                <h4>Beepbox.co</h4>
+            </div>
+        </a>
+    </div>
+
+
+    <audio src="../Assets/bios.ogg" autoplay loop id="audio"></audio>
+
+    <script>
+        let mus = document.getElementById('audio');
+        mus.volume = 0.01
+    </script>
+</body>
+
+</html>
