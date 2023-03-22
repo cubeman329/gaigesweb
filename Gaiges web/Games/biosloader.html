@@ -35,6 +35,7 @@
             font-family: Shin-go;
             text-shadow: 0px 0px 5px white;
         }
+
         button {
             font-family: Shin-go;
             text-shadow: 0px 0px 5px white;
@@ -45,23 +46,25 @@
             color: white;
             background: black;
         }
+
         .backbtn {
             font-size: 15px;
+            height: fit-content;
         }
     </style>
+
+    
 </head>
 
 <body>
-    <iframe id="screen" src="./bios.html" scrolling="no" frameborder="1"
-        allowfullscreen></iframe>
+    <iframe id="screen" src="./bios.html" scrolling="no" frameborder="1" allowfullscreen></iframe>
     <div class="titleinfo">
         <h1><strong>BootLoader</strong></h1>
         <br>
         <br>
         <p>This is the BootLoader for quick and easy access to games <br> Hover over the menu to see the menu name</p>
         <br>
-        <a href="../Home/home.html">
-            <button class="backbtn">Back</button>
+        <a href="../Home/home.html"><button class="backbtn">Back to Home</button>
         </a>
     </div>
     <button onclick="goFullscreen('screen'); return false">Fullscreen</button>
