@@ -27,7 +27,7 @@
             margin: 0;
             padding: 0;
             height: 648px;
-            width: 920px;
+            width: 60.64601186552406vw;
         }
 
         .titleinfo {
@@ -51,6 +51,14 @@
             font-size: 15px;
             height: fit-content;
         }
+        #resetbutton {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-wrap: break-word;
+            display: block;
+            line-height: 1em;
+            max-height: 2em;
+        }
     </style>
 
     
@@ -68,7 +76,7 @@
         </a>
     </div>
     <button onclick="goFullscreen('screen'); return false">Fullscreen</button>
-    <button onclick="screen.src = screen.src">Back to BootLoader</button>
+    <button onclick="screen.src = screen.src" id="resetbutton">Back to BootLoader</button>
 
     <script>
         const screen = document.getElementById('screen')
