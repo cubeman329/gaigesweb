@@ -6,8 +6,8 @@ body {
 }
 .cube {
   transform-style: preserve-3d;
-  height: 100px;
-  width: 100px;
+  height: 101px;
+  width: 101px;
   position: absolute;
   transform: rotateX(-290deg) rotateZ(0deg) translateZ(-300px);
   animation: 5s infinite linear forwards rotate;
@@ -16,34 +16,34 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  /* background: linear-gradient(#111, white); */
+  /* background: linear-gradient(#333, lime); */
 }
 .top {
-  background: #111;
+  background: #333;
   transform: translateZ(50px);
 }
 .left {
   transform: rotateX(90deg) translateZ(50px);
-  background: linear-gradient(to top, #111, #ddffdd);
+  background: linear-gradient(to top, #333, lime);
 }
 .right {
   transform: rotatey(90deg) rotateZ(0deg) translateZ(50px);
-  background: linear-gradient(to right, #111, #ddffdd);
+  background: linear-gradient(to right, #333, lime);
 }
 .bottom {
-  transform: translatez(-50px);
-  background: white;
-  filter: blur(60px);
-  box-shadow: 0px 0px 100px white;
+  transform: translatez(-100px);
+  background: lime;
+  filter: blur(20px);
+  box-shadow: 0px 0px 50px lime;
 }
 
 .backleft {
   transform: rotateY(90deg) translateZ(-50px);
-  background: linear-gradient(to right, #111, #ddffdd);
+  background: linear-gradient(to right, #333, lime);
 }
 .backright {
   transform: rotateX(90deg) translateZ(-50px);
-  background: linear-gradient(to top,#111, #ddffdd);
+  background: linear-gradient(to top,#333, lime);
 }
 .one {
   transform: rotateX(-290deg) rotateZ(0deg) translateZ(-300px) translateY(200px);
@@ -58,5 +58,5 @@ body {
   }
 }
   body {
-    background: black;
+    background: #111;
   }
