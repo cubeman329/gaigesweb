@@ -1,5 +1,5 @@
 const backgroundAudio = document.getElementById('bruh');
-
+backgroundAudio.volume = 0.5
 document.addEventListener('visibilitychange', () => {
     if (document.visibilityState == 'visible') {
         backgroundAudio.play();
@@ -8,7 +8,6 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-const mutebtn = document.getElementById('mute');
 const anchor = document.getElementById('nl');
 anchor.target = '_blank';
 let inf = document.getElementById('info');
